@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert Before Function</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+    <button type="button" id="btn">Show</button>
+  </body>
+  <script>
+    // let user = document.getElementById("list");
+    // let item = document.createElement("li");
+    // item.textContent = "New List ";
+    // // let first = user.firstElementChild;
+    // let secound = user.firstElementChild.nextElementSibling.nextElementSibling;
+
+    // document.getElementById("btn").onclick = function () {
+    // //   user.insertBefore(item, first);
+    //   user.insertBefore(item, secound);
+    // };
+
+    let parents=document.body;
+    let elm=document.createElement("h2")
+    let list=document.getElementById("list");
+    elm.textContent="New Element"
+    document.getElementById("btn").onclick=function(){
+        parents.insertBefore(elm,list)
+
+    }
+    
+
+  </script>
+</html>
