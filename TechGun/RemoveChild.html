@@ -7,11 +7,18 @@
     <title>RemoveChild</title>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia
-      commodi iure quae at explicabo, ipsa amet. Distinctio animi nesciunt
-      voluptas atque repellat labore, saepe ullam illum voluptate asperiores
-      nihil?
-    </p>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About us</li>
+    </ul>
+    <button type="button" id="btn" >Click me</button>
   </body>
+  <script>
+        let parrent=document.getElementById("menu")
+        document.getElementById("btn").onclick=function(){
+            let elm=parrent.firstChild
+            parrent.removeChild(elm);
+        }
+  </script>
 </html>

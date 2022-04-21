@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjust Element</title>
+</head>
+<body>
+    <!-- beforebegin -->
+   <div id="intro">
+       <!-- afterbegin -->
+       <h2>Heading</h2>
+       <p>This is a p Tag</p>
+       <!-- beforeend -->
+       <button id="btn" type="button">Click Me</button>
+   </div>
+   <!-- afterend -->
+</body>
+<script>
+    let elm=document.getElementById("intro")
+    let html="<h1>New H1</h1>"
+    document.getElementById("btn").onclick=()=>{
+        elm.insertAdjacentHTML('beforebegin',html)
+        elm.insertAdjacentHTML('afterbegin',html)
+    }
+</script>
+</html>
