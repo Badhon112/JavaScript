@@ -16,6 +16,23 @@
 // console.log(data.replace("am","Am"));
 
 //Char At()
-let str="BADHON BISWAS"
+// let str="BADHON BISWAS"
 // console.log(str.charAt(0));
-console.log(str.charCodeAt(0));
+// console.log(str.charCodeAt(0));
+
+// //Concat
+// let first='Badhon'
+// let last='Biswas'
+// console.log(first.concat(" ",last));
+
+//Trim
+// let names="   Badhon   "
+// console.log(names.trim());
+
+// convert a String to an array
+
+//Splite
+var text="a, ,b,|,c,d,r"
+console.log(text.split(","));
+console.log(text.split(" "));
+console.log(text.split("|"));
