@@ -25,9 +25,11 @@
 // }
 // change time
 
-(function (){
-    // let da=new Date()
-setTimeout(()=>{
-console.log(new Date.toLocaleDateString());
-},1000)
-})
+(function () {
+    setInterval(() => {
+        let date = new Date();
+        if(date>12){
+            console.log(date.toLocaleTimeString());
+        }
+    }, 1000)
+})();
