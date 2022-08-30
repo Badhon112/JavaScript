@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+
+<body>
+
+    <!-- <p id="Myp" onmousedown="MouseDown()" onmouseup="MouseUp()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, nostrum exercitationem. Dolor voluptatem magnam -->
+        <!-- quos libero! Rerum velit accusantium a consequatur sequi voluptatum vitae quam aut amet dolorum, vero minus
+        cupiditate maxime pariatur, veritatis nesciunt quisquam quod tempore saepe. Corrupti dicta tenetur in, quasi
+        nisi consectetur nobis! Eligendi fuga voluptatem pariatur beatae rerum ipsam praesentium debitis velit
+        architecto quas perferendis libero illo voluptatibus inventore iste quae officiis commodi officia nisi, tempora
+        harum eius? Ipsa quos vel modi, doloremque dolorem repellendus enim dolores, delectus odio temporibus velit
+        minus? Repellat odio architecto voluptas tempora enim provident totam saepe obcaecati ex libero consectetur
+        magni, quisquam mollitia at distinctio quod animi eos reiciendis! Cum repellat inventore amet numquam ad
+        necessitatibus dolores deserunt, sapiente nostrum beatae unde modi iusto! Debitis vitae doloremque enim facere
+        quos alias? Fugit magnam ea cupiditate vero quas beatae odio hic voluptate labore tempora quidem harum magni
+        nihil assumenda itaque quibusdam in ratione, earum veritatis consequuntur nisi repellendus laboriosam aliquid!
+        Corporis doloribus aut maiores recusandae amet, similique praesentium possimus dignissimos autem laboriosam
+        repellendus. Cum officia aperiam quam accusamus eos fugit placeat praesentium? Neque, fugiat illo. Ut alias
+        ipsam delectus fugit repellat, saepe atque doloribus sint dolorum corporis nihil ab recusandae aliquam
+        distinctio sed adipisci obcaecati maiores illum dignissimos quis numquam. Ducimus, dolore minus porro, magnam
+        praesentium dolorum molestiae et sequi placeat esse quia facilis quis repellat dicta nihil tenetur eius corporis
+        neque saepe, quas laboriosam vero accusantium. Vero ab nulla voluptatibus alias amet voluptatum sapiente, dolor,
+        rem necessitatibus eius dolore cupiditate, aspernatur sequi repellendus dicta rerum. Doloremque excepturi
+        molestiae voluptate veniam, impedit atque reprehenderit molestias inventore maxime rem ab optio eius magni
+        possimus aut consequuntur nihil explicabo iste temporibus voluptas suscipit vero ipsum. Quidem laborum similique
+        quas cum magnam iste distinctio? Incidunt fuga laborum id optio impedit in itaque aspernatur molestias labore
+        sit laudantium iusto ullam animi voluptates modi officiis, repellendus quaerat! Fugit voluptas ab iusto ipsa,
+        minima reiciendis veritatis nam quis tempora! Quibusdam, enim consequatur sunt atque temporibus impedit at id
+        quaerat maxime modi corrupti vitae dolor distinctio debitis explicabo doloribus ullam quos. Assumenda soluta,
+        cum dolores sapiente odio dolor, ipsum iure voluptatibus delectus sunt dignissimos adipisci non, officia eos hic
+        ex molestias repudiandae eum sequi. Distinctio ipsum hic quas commodi incidunt repudiandae aliquam dolorum,
+        officiis optio. Itaque odio laborum tenetur totam. Quos, vitae reiciendis, fugiat temporibus pariatur architecto -->
+        <!-- suscipit alias quod similique ad exercitationem. Cum nisi consectetur obcaecati quisquam.</p> -->
+
+        <div>
+            <div id="Box" > 
+
+            </div>
+        </div>
+
+    </body>
+<script>
+    // function MouseDown(){
+    //     document.getElementById("Myp").style.color="red"
+    // }
+    // function MouseUp(){
+    //     document.getElementById("Myp").style.color="blue "
+    // }
+const mbox=document.querySelector("#Box")
+mbox.addEventListener('mouseenter',()=>{
+    mbox.style.backgroundColor='red'
+})
+mbox.addEventListener('mouseleave',()=>{
+    mbox.style.backgroundColor='black'
+})
+
+</script>
+</html>

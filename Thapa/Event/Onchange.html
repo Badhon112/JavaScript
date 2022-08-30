@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Change Event</title>
+</head>
+
+<body>
+    <input type="text" name="Names" id="Names">
+    <select name="icecreame" id="icecreame" onchange="ALL()">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="MC">MC</option>
+    </select>
+    <div id="Box">
+
+    </div>
+</body>
+<script>
+
+    // const ALL=()=>{
+    //    const input= document.querySelector("#Names").value;
+    //    const select=document.querySelector("#icecreame").value
+    //    document.querySelector("#Box").innerHTML=`Mr ${input} want ${select}`
+    // }
+
+    const All = document.querySelector("#icecreame")
+    All.addEventListener('change', () => {
+        const input = document.querySelector("#Names").value;
+        const select = document.querySelector("#icecreame").value
+        document.querySelector("#Box").innerHTML = `Mr ${input} want ${select}`
+    })
+</script>
+
+</html>
